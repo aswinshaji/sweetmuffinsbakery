@@ -1,0 +1,26 @@
+h1 {text-align: center;}
+
+div {color: brown; float: left; width: 70%; display: inline-block;}
+
+img {width: 20%; height: 130px;}
+
+h2 {text-align: center;}
+
+p {text-align: left;}
+
+body {background-color: orange}
+
+form {margin-left: 20em; margin-right: 20em;}
+
+ul {color: brown; margin-left: 30em; margin-right: 30em;}
+
+ol {color: brown}
+
+table {border: none;}
+
+.float-right
+{
+  float: right;
+  width: 70%;
+  display: inline-block;
+}

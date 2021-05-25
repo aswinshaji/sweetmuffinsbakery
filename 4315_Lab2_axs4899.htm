@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Thank You for Choosing Sweet Muffins Bakery</title>
+		<link rel = "stylesheet" type = "text/css" href = "4315_Lab2_axs4899CSS.css">
+		<link rel="stylesheet" type="text/css" href="menu.css">
+
+		<script type="text/javascript">
+
+			var cName, cValue, c, expires, name;
+			var i;
+			var timer1 ;
+			var sValue1, sValue2, sValue3;
+
+			function getCookie(cName)
+			{
+				var keyName = cName + "=";
+				var cArray = document.cookie.split(';');
+				//alert(cArray) ;
+				for(var i = 0; i < cArray.length; i++)
+				{
+					c = cArray[i];
+					while (c.charAt(0) == ' ')
+					{
+						c = c.substring(1);
+						alert (c) ;
+					}
+					if (c.indexOf(keyName) == 0)
+					{
+
+						return c.substring(keyName.length, c.length);
+					}
+				}
+				//loop through the array of key/value pairs from the cookie
+				return "";
+			}
+          
+			function createCookie(cName, cValue, exDays) 
+			{
+			  var d = new Date();
+			  d.setTime(d.getTime() + (exDays * 24 * 60 * 60 * 1000));
+			  expires = "expires="+d.toUTCString();
+			  //alert("cookie will be set to " + cName + cValue + expires) ;
+			  document.cookie = cName + "=" + cValue + ";" + expires ;
+			  //alert(document.cookie);
+			}
+
+			function getName()
+			{
+				name = prompt("Please enter your name:");
+
+				createCookie("userName", name, 7);
+
+				document.getElementById("newmessage").innerHTML = "Welcome " + name + ". We hope you will enjoy your Sweet Muffin Bakery experience!";
+				document.getElementById("anchor1").innerHTML = "Please click here if you are not", name ;
+
+			}
+
+			function user()
+			{
+				document.getElementById("newmessage").innerHTML = "Welcome " + name + ". We hope you will enjoy your Sweet Muffin Bakery experience!";
+				document.getElementById("anchor1").innerHTML = "" ;
+			}
+
+			function checkCookie(callingEvent) 
+			{
+			  //var user = readCookie("user");
+
+			  user = getCookie("userName" ) ;
+			  
+			  if (user != "") 
+			  {
+			    document.getElementById("newmessage").innerHTML = "Welcome, " + user + ". We hope you will enjoy your Sweet Muffin Bakery experience!";
+			  } 
+			  else 
+			  {
+			  	if (callingEvent != "onload")
+			  	{
+			    	user = prompt("Please enter your name:", "");
+			    	if (user != "" && user != null) 
+			    	{
+			      		createCookie("userName", user, 365);
+			   		}
+			  	}
+			  }	
+			}
+
+			function startTime( )
+		{
+		/* create a timer/timing event using the setInterval method of the timer object, passing it a
+			function to generate a random number every 1/10 of a second
+			and to stop after 2 seconds */
+			timer1 = window.setInterval("randomNumber( )", 5000) ;
+			window.setTimeout("stopTimer( )", 5000) ;	
+		}
+
+		function stopTimer( )
+		{
+			window.clearInterval(timer1) ;
+		}
+
+			function randomNumber()
+			{
+				Value = Math.floor(Math.random( ) * 10) ;
+				//Value = 5;
+				if (Value == 5)   
+				{
+					if (confirm("You have been randomly selected to participate in a customer satisfaction survey"))
+					{
+						open("4315_Lab1_axs4899.htm");
+					}
+				}
+			}
+
+
+		</script>
+	</head>
+
+	<body onload="checkCookie('onload'); startTime( );">
+		<h1>Thank You for Choosing Sweet Muffins Bakery</h1>
+
+		<div id="menu" style="text-align: center; width: 90%">
+		<nav>
+			<a href="4315_Lab2_axs4899.htm" style="color: black; font-size: 1.1em">Home</a>
+			&nbsp;
+			<a href="productpage.htm" style="color: black; font-size: 1.1em">Products</a>
+			&nbsp;
+			<a href="contactus.htm" style="color: black; font-size: 1.1em">Contact Us</a>
+			&nbsp;
+		</nav>
+	</div>
+
+		<div>
+			<p>
+				You have been randomly selected to participate in our Customer Satisfaction Survey.  Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with Sweet Muffins Bakery.  To show our appreciation, we will send you a $5 Sweet Muffins Bakery eGift Certificate via e-mail.
+			</p>
+		</div>
+
+		<img src="muffin.jpg" alt="">
+
+		<img src="muffin2.jpg" alt="">
+
+		<div id="newmessage" class="float-right">Want a more personalized experience on our website?
+			<p>
+				<a href="javascript:getName();" id="anchor1">Please click here to provide your name</a>
+				<p >
+					
+				</p>
+			</p>
+		</div>
+		
+	</body>
+</html>

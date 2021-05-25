@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sweet Muffin Bakery - Products</title>
+	<link rel="stylesheet" type="text/css" href="productpage.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="producttable.css">
+</head>
+<body>
+	<h1>Sweet Muffin Bakery</h1>
+	<h2>Our Products</h2>
+	<p></p>
+	<div id="menu" style="text-align: center; width: 90%">
+		<nav>
+			<a href="4315_Lab2_axs4899.htm" style="color: black; font-size: 1.1em">Home</a>
+			&nbsp;
+			<a href="productpage.htm" style="color: black; font-size: 1.1em">Products</a>
+			&nbsp;
+			<a href="contactus.htm" style="color: black; font-size: 1.1em">Contact Us</a>
+			&nbsp;
+		</nav>
+	</div>
+
+	<form action="#" style="text-align: center;">
+		<div style="text-align: center; width: 90%">
+			<br>
+			<p>
+				<table align="center">
+					<thead>
+						<tr>
+							<th><a id="sortID" href="javascript:sortByID( )" style="text-decoration-line: underline; color: black; ">Product ID </a></th>
+							<th></th>
+							<th><a id="sortName" href="javascript:sortByName( )" style="text-decoration-line: underline; color: black; ">Product Name </a></th>
+							<th><a style="text-decoration-line: none; color: black; ">Product Description </a></th>
+							<th><a id="sortPrice" href="javascript:sortByPrice( )" style="text-decoration-line: underline; color: black; ">Product Price </a></th>
+							<th><a style="text-decoration-line: none; color: black; ">Quantity </a></th>
+						</tr>
+						</thead>
+						(Click a Column Headings to Sort)
+						<tbody id="tbodyRows" style="color: black;"></tbody>
+				</table>
+			</p>
+		</div>
+		<p style="width: 80%; text-align: right;">
+			<input type="submit" value="Confirm" onclick = "confirmQty();">
+			<input type="reset" value="Reset">
+		</p>
+
+		<script src="productpage.js"></script>
+	</form>
+</body>
+</html>

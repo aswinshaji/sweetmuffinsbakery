@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 1,
+		"prodImg": "muffin3.jpg",
+		"prodName": "Chocolate Muffin",
+		"prodDesc": "Muffin flavored with 100% chocolate",
+		"prodPrice": "$1.49"
+	},
+	{
+		"prodID": 2,
+		"prodImg": "muffin4.jpg",
+		"prodName": "Blueberry Muffin",
+		"prodDesc": "Muffin which is freshly made with blueberry inside",
+		"prodPrice": "$1.99"
+	},
+	{
+		"prodID": 3,
+		"prodImg": "muffin5.jpg",
+		"prodName": "Banana Muffin",
+		"prodDesc": "Muffin flavored with 100% banana",
+		"prodPrice": "$2.49"
+	},
+	{
+		"prodID": 4,
+		"prodImg": "coffee.jpg",
+		"prodName": "Coffee",
+		"prodDesc": "Freshly brewed coffee",
+		"prodPrice": "$1.99"
+	},
+	{
+		"prodID": 5,
+		"prodImg": "pigs-in-a-blanket.jpg",
+		"prodName": "Pigs in a blanket",
+		"prodDesc": "Sausage rolls inside the pastry",
+		"prodPrice": "$0.99"
+	},
+	{
+		"prodID": 6,
+		"prodImg": "croissant.jpg",
+		"prodName": "Croissant",
+		"prodDesc": "Freshly made croissant",
+		"prodPrice": "$1.99"
+	},
+	{
+		"prodID": 7,
+		"prodImg": "frenchtoast.jpg",
+		"prodName": "French Toast",
+		"prodDesc": "Sweet french toast cover with sugar and syrup",
+		"prodPrice": "$1.49"
+	},
+	{
+		"prodID": 8,
+		"prodImg": "orangejuice.jpg",
+		"prodName": "Orange Juice",
+		"prodDesc": "Freshly made orange juice",
+		"prodPrice": "$1.99"
+	},
+	{
+		"prodID": 9,
+		"prodImg": "breakfastbiscuitsandwiches.jpg",
+		"prodName": "Breakfast biscuit sandwich",
+		"prodDesc": "Biscuit included with egg, bacon, and cheese",
+		"prodPrice": "$2.49"
+	},
+	{
+		"prodID": 10,
+		"prodImg": "omelette.jpg",
+		"prodName": "Omelette",
+		"prodDesc": "Freshly made omelette",
+		"prodPrice": "$0.99"
+	}
+]

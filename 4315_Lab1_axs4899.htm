@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Thank You for Choosing Sweet Muffins Bakery</title>
+
+		<style>
+			
+			h1 {text-align: center;}
+
+			div {color: brown; float: left; width: 70%}
+
+			img {width: 20%; height: 130px;}
+
+			h2 {text-align: center;}
+
+			p {margin-left: 20em; margin-right: 20em;}
+
+			body {background-color: orange}
+
+			ul {color: brown; margin-left: 30em; margin-right: 30em;}
+
+			ol {color: brown}
+
+			table {border: none;}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Thank You for Choosing Sweet Muffins Bakery</h1>
+
+		<div>You have been randomly selected to participate in our Customer Satisfaction Survey.  Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with Sweet Muffins Bakery.  To show our appreciation, we will send you a $5 Sweet Muffins Bakery eGift Certificate via e-mail.</div>
+
+		<img src="muffin.jpg" alt="">
+
+		<hr>
+
+		<h2>Personal Information</h2>
+
+		<form method="post">
+		<input type="hidden" name="recipient" value="Joe@abc.com">
+		<input type = "hidden" name = "subject" value = "eGift Certificate" >
+		<input type = "hidden" name = "redirect" value = "http://www.uta.edu" >
+			<p>
+				<label>First Name:
+					<input name="fname" type="text" size="20" maxlength="20" required autofocus>
+				</label>
+				<label>Last Name:
+					<input name="lname" type="text" size="20" maxlength="20" required autocomplete="off">
+				</label>
+			</p>
+
+			<p>
+				<label>Email Address:
+					<input name="email" type="email" placeholder="e.g., Joe@abc.com" size="20" required title="Must be a valid address.">
+				</label>
+			</p>
+
+			<p>
+				<label>Gender:</label>
+				<input name="Male" type="radio" value="Male"><label>Male</label>
+				<input name="Female" type="radio" value="Female"><label>Female</label>
+			</p>
+
+			<p>
+				<label>Age Group:</label>
+				<input name="Under 21" type="radio" value="Under 21"><label>Under 21</label>
+				<input name="21-40" type="radio" value="21-40"><label>21-40</label>
+				<input name="Over 21" type="radio" value="Over 21"><label>Over 21</label>
+			</p>
+
+			<hr>
+
+		<h2>Please respond to the opinion statements using the following scale:</h2>
+		<ul>
+			<li>1 = Strongly Agree</li>
+			<li>2 = Somewhat Agree</li>
+			<li>3 = Neither Agree nor Disagree</li>
+			<li>4 = Somewhat Disagree</li>
+			<li>5 = Strongly Disagree</li>
+		</ul>
+
+		<ol>
+			<li>Sweet Muffins Bakery products are always fresh. 
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>Sweet Muffins Bakery products have an appealing aroma.
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>Sweet Muffins Bakery products are reasonably priced.
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>Sweet Muffins Bakery products are of the highest quality.
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>Overall, I am very satisfied with Sweet Muffins Bakery products.
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+		</ol>
+
+		<p>
+			<input type="submit" name="Submit">
+			<input type="reset" name="Reset">
+		</p>
+
+		</form>
+	</body>
+</html>

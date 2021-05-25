@@ -1,0 +1,30 @@
+#tbodyRows
+{
+    border: solid;
+    table-layout: fixed;
+    color: lightgray;
+}
+
+table{
+	table-layout: auto;
+	display: table;
+}
+
+
+tr
+{
+	padding: auto;
+    border: solid;
+    height: 50px;
+}
+
+td
+{
+    border: solid;
+    height: 50px;
+}
+
+img{
+    
+    width: 190px;
+}
